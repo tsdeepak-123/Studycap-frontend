@@ -35,7 +35,7 @@
 .explore-button{
   width: 250px;
   height: 70px;
-  background-color: green;
+  background-color: darkcyan;
   font-size:18px;
 }
 
@@ -55,7 +55,7 @@
   .explore-button{
     width: 210px;
     height: 60px;
-    background-color: green;
+    background-color: darkcyan;
     font-size:14px;
   }
 }

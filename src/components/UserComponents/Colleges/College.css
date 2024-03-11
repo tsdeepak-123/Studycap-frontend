@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+   }
+
+.button-div{
+display: flex;
+justify-content: end;
+margin-right: 110px;
+   }
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .button-div {
+        justify-content: center; 
+        margin-right: 0;
+    }
+
+}
+
+
+      

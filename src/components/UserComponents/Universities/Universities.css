@@ -1,0 +1,7 @@
+.uni-container{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -25,7 +25,7 @@ function Home() {
         className="banner-image"
       />
       <div className='button'>
-      <Link to='' smooth={true} duration={500} > <button className="explore-button group text-white  px-6 py-3 my-2 flex items-center hover:bg-green-700 hover:border-green-700" >Explore Colleges
+      <Link to='' smooth={true} duration={500} > <button className="explore-button group text-white  px-6 py-3 my-2 flex items-center hover:bg-cyan-500 hover:border-cyan-500" >Explore Colleges
             <span className="group-hover:rotate-90 duration-300">
             <HiArrowNarrowRight className="ml-10 "/>
             </span>
