@@ -1,4 +1,15 @@
-.container {
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Start from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move back to original position */
+    }
+  }
+  
+  .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -7,8 +18,13 @@
     align-items: center;
     overflow: hidden;
     margin-bottom: 50px;
-   }
-
+    max-width: 80%;
+  }
+  
+  .animate{
+    animation: slideIn 3s ease-in-out; /* Apply the animation */
+  }
+  
 .button-div{
 display: flex;
 justify-content: end;

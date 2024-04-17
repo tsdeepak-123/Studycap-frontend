@@ -1,0 +1,46 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.modal-content {
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    width: auto; /* Adjust width to auto */
+    max-width: 80%; /* Set max-width to ensure modal does not cover entire screen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative; /* Add relative positioning */
+}
+
+.close {
+    position: fixed; /* Change to fixed positioning */
+    font-size: 1rem;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.modal-body {
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        max-width: 90%;
+        width: 95%;
+    }
+}

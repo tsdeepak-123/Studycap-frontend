@@ -1,7 +1,27 @@
 .uni-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    max-width: 80%;
 }
+
+.animate{
+    animation: slideIn 3s ease-in-out; /* Apply the animation */
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Start from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move back to original position */
+    }
+  }
+  

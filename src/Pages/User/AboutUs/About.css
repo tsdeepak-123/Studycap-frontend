@@ -31,7 +31,7 @@
   margin-top: 30px;
   font-size: 2rem;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   display: flex;
   justify-content: center;
 }

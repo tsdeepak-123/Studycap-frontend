@@ -1,34 +1,26 @@
-.relative {
-    position: relative;
-  }
+
   
-  .absolute {
-    position: absolute;
-  }
-  
-  .banner-container {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .banner{
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
-  }
-  
-  .text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 100%;
-  }
-  
-  .service-name { 
+  .service-name {
     font-size: 3rem;
     color: white;
     font-weight: bold;
-  }
+    border: 2px solid blue; /* Adding a blue border */
+    padding: 10px; /* Adding some padding to enhance appearance */
+}
+
+.service-item h3{
+  color: black;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+.service-item{
+ width: 80%;
+}
+}
+
+@media only screen and (max-width: 992px) {
+  .service-item{
+    min-width: 100%;
+   }
+}

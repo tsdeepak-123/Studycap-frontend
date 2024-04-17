@@ -2,7 +2,9 @@ import React from 'react'
 import "./Service.css"
 import Header from "../../../components/UserComponents/Header/Header"
 import Services from "../../../components/UserComponents/Services/Services"
+import Colleges from "../../../components/UserComponents/Colleges/Colleges"
 import Footer from "../../../components/UserComponents/Footer/Footer"
+import Intrested from '../../../components/UserComponents/Services/Intrested'
 
 function OurServices() {
   return (
@@ -10,7 +12,7 @@ function OurServices() {
                     <div className="relative banner-container">
       <Header/>
       <img
-        src="/images/event.jpg"
+        src="/images/colleges.jpg"
         alt="Background"
         className="banner"
       />
@@ -20,7 +22,12 @@ function OurServices() {
         </div>
       </div>
     </div>
+    <div>
+      <p className='about-heading'>WHAT WE DO FOR YOU</p>
+    </div>
     <Services/>
+    <Intrested/>
+    <Colleges/>
         <Footer/>
     </div>
   )

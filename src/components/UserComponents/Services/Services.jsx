@@ -1,46 +1,61 @@
 import React from 'react';
 import './Services.css';
-import ServiceCard from './ServiceCard';
+import { 
+  AssignmentInd as AdmissionIcon,
+  EventSeat as SeatIcon,
+  School as CareerIcon,
+  MonetizationOn as LoanIcon,
+  Info as InfoIcon,
+  EmojiObjects as GuidanceIcon
+} from '@mui/icons-material';
 
 function Services() {
+  const servicesList = [
+    {
+      title: "Admission Assistance",
+      description: "We provide expert assistance to help you navigate the admission process smoothly.",
+      icon: <AdmissionIcon />
+    },
+    {
+      title: "Seat Reservation",
+      description: "Secure your seat in your desired college or university hassle-free with our reservation service.",
+      icon: <SeatIcon />
+    },
+    {
+      title: "Career Counseling",
+      description: "Our experienced counselors will guide you to make informed decisions about your career path.",
+      icon: <CareerIcon />
+    },
+    {
+      title: "Loan Assistance",
+      description: "Get help in obtaining financial aid and loans to support your education journey.",
+      icon: <LoanIcon />
+    },
+    {
+      title: "College Information",
+      description: "Access comprehensive information about various colleges and universities to make the right choice.",
+      icon: <InfoIcon />
+    },
+    {
+      title: "Admission Guidance",
+      description: "Receive personalized guidance and support throughout the admission process.",
+      icon: <GuidanceIcon />
+    }
+  ];
+
   return (
     <div className="services-container">
-      <h2 className="services-header">Choose Your Birthday Theme</h2>
-      <ServiceCard 
-        image={'/images/superHero.jpg'} 
-        name={"Superhero Adventure"} 
-        des={"Transform your child into a superhero for the day! Our superhero adventure includes superhero character appearances, games, and a hero training course."}
-      />
-      <ServiceCard 
-        image={'/images/poolParty.jpg'}
-        name={"Pool Party"}
-        des={"Make a splash with a pool party! Includes water games, inflatable slides, and poolside snacks."}
-      />
-      <ServiceCard 
-        image={'/images/butterfly.jpg'}
-        name={"Butterfly Garden"}
-        des={"Create a magical experience with a butterfly-themed garden party. Includes butterfly releases, garden games, and butterfly-themed decorations."}
-      />
-      <ServiceCard 
-        image={'/images/JungleTheme.jpg'}
-        name={"Jungle Adventure"}
-        des={"Embark on a wild jungle adventure! Includes jungle-themed decorations, animal encounters, and safari games."}
-      />
-      <ServiceCard 
-        image={'/images/mickymouse.jpg'}
-        name={"Mickey Mouse Clubhouse"}
-        des={"Celebrate with Mickey and friends in our clubhouse! Includes character appearances, games, and Mickey-themed decorations."}
-      />
-      <ServiceCard 
-        image={'/images/butterflyTwo.jpg'}
-        name={"Enchanted Garden"}
-        des={"Step into an enchanted garden filled with flowers and fairies. Includes fairy character appearances, garden games, and magical decorations."}
-      />
-      <ServiceCard 
-        image={'/images/JungleTwo.jpg'}
-        name={"Safari Expedition"}
-        des={"Embark on a thrilling safari expedition! Includes safari jeep rides, animal encounters, and adventure games."}
-      />
+      <div className="services-list">
+        {servicesList.map((service, index) => (
+          <div key={index} className="service-item">
+            <div className="service-content">
+              <div className="icon">{service.icon}</div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

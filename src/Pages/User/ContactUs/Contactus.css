@@ -1,0 +1,9 @@
+
+    .contact-heading{
+        margin-top: 50px;
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }

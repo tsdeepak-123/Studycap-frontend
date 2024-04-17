@@ -1,0 +1,80 @@
+.college-card {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+}
+
+.college-info {
+    display: flex;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.college-image {
+    width:100%; /* Update */
+    height:auto;
+    border-radius: 10px;
+}
+
+.college-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.college-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.college-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.apply-button,
+.details-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.details-button {
+    background-color: #6C757D;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .college-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-section {
+        width: 100%;
+        padding: 0;
+    }
+    .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+}

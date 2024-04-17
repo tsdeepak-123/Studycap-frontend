@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from "../../../components/UserComponents/Header/Header"
-import About from "../../../components/UserComponents/About/About"
 import Footer from "../../../components/UserComponents/Footer/Footer"
+import Universities from '../../../components/UserComponents/Universities/Universities'
 import "./About.css"
-import Team from '../../../components/UserComponents/About/Team'
+import StudyCap from '../../../components/UserComponents/StudyCap/StudyCap'
+import Intrested from '../../../components/UserComponents/Services/Intrested'
+import FormBox from '../../../components/UserComponents/Form/FormBox'
 
 function AboutUs() {
   return (
@@ -11,22 +13,23 @@ function AboutUs() {
             <div className="relative banner-container">
       <Header/>
       <img
-        src="/images/event1.jpg"
+        src="/images/about.jpg"
         alt="Background"
         className="banner"
       />
       <div className="absolute text-container">
         <div className="transparent-header">
-          <h1 className="about-name">ABOUT US</h1>
+          <h1 className="about-name">ABOUT STUDYCAP</h1>
         </div>
       </div>
     </div>
     <div>
-      <p className='about-heading'>We Are Kaaf</p>
+      <p className='about-heading'>WHY STUDYCAP</p>
     </div>
-    <About/>
-        <Team/>
-        <Footer/>
+    <StudyCap/>
+   <Intrested/>
+   <Universities/> 
+   <Footer/>
     </div>
   )
 }

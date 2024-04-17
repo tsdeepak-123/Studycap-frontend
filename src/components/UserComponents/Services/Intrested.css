@@ -1,0 +1,35 @@
+.content {
+  margin-bottom: 20px; /* Space between content and button */
+}
+
+.content h2 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1rem;
+  color: white;
+}
+
+.contact-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    padding: 5%;
+  }
+}

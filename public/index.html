@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-
     <link rel="icon" href="/images/StudycapLogo.png" />
     <title>Studycap</title>
-  </head>
-  <body>
+</head>
+<body>
     <div id="root"></div>
-  </body>
+    <script type="text/javascript">
+      function loadTawkTo() {
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/65f6bf109317c5437128bad1/1hp5tkmnm';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      }
+      // Function to check if the current route is for users (and not admin)
+      function shouldLoadTawkTo() {
+        return !window.location.pathname.includes("/admin");
+      }
+
+      if (shouldLoadTawkTo()) {
+        loadTawkTo();
+      }
+    </script>
+</body>
 </html>

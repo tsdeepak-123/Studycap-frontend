@@ -1,0 +1,40 @@
+.adminheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4793AF; /* Change this to your desired header background color */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px;
+  }
+  
+  .site-name {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Change this to your desired logout button color */
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b; /* Change this to your desired hover color */
+  }
+  

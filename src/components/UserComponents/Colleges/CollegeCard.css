@@ -4,62 +4,66 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-   }
-   
-   .college-card:hover {
+  }
+  
+  .college-card:hover {
     transform: scale(1.05);
-   }
-   
-   .college-card-image {
+  }
+  
+  .college-card-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-   }
-   
-   .college-card-content {
+  }
+  
+  .college-card-content {
     padding: 15px;
-   }
-   
-   .college-card-name {
-    display: flex;
-    justify-content: center;
+  }
+  
+  .college-card-name {
     font-size: 18px;
     font-weight: bold;
-   }
-   
-   .college-card-description {
-    display: flex;
-    justify-content: center;
+  }
+  
+  .college-card-description {
     font-size: 14px;
     color: #666;
-   }
-   
-   .college-card-buttons {
+  }
+  
+  .read-more-button {
+    background: none;
+    border: none;
+    color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .college-card-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-   }
-   
-   .college-card-button {
+    gap: 10px;
+  }
+  
+  .college-card-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-   }
-   
-   .apply-now {
-    background-color: darkcyan;
+  }
+  
+  .apply-now {
+    background-color: #0056b3;
     color: white;
-   }
-   
-   .apply-now:hover {
-    background-color:cyan;
-   }
-   
-   .view-details {
-    border: 1px solid ;
-    color: darkcyan;
-   }
-   
-   
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-now:hover {
+    background-color: #004080;
+  }
+  
+  .view-details {
+    border: 1px solid;
+    color: #0056b3;
+  }
+  

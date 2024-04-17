@@ -26,6 +26,9 @@ function Header() {
   const handleContact = () => {
     navigate("/contactus");
   };
+  const handleCollege = () => {
+    navigate("/colleges");
+  };
 
   return (
     <>
@@ -36,10 +39,10 @@ function Header() {
       <nav className="navbar">
         <ul className={`menu ${isOpen ? "open" : ""}`}>
           <li onClick={handleHome}>Home</li>
-          <li onClick={handleHome}>Colleges</li>
+          <li onClick={handleCollege}>Colleges</li>
           <li onClick={handleAbout}>About</li>
           <li onClick={handleService}>Services</li>
-          <li onClick={handleCareer}>Career</li>
+          {/* <li onClick={handleCareer}>Career</li> */}
           <li onClick={handleContact}>Contact Us</li>
         </ul>
         <div className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
