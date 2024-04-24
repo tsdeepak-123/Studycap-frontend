@@ -21,7 +21,7 @@ function SingleView() {
         />
         <div className="absolute text-container">
           <div className="transparent-header">
-            <h1 className="about-name">COLLEGES</h1>
+            <p className="text-3xl font-bold">COLLEGES</p>
           </div>
         </div>
       </div>

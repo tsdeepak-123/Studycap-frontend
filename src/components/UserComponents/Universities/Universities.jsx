@@ -73,11 +73,11 @@ function Universities() {
         ))}
       </div>
       <div className='button-div'>
-        <button
+        {/* <button
           className='view-all-button text-blue-600'
         >
           View More <NavigateNextIcon/>
-        </button>
+        </button> */}
       </div>
     </>
   );

@@ -21,7 +21,7 @@ function Contact() {
       />
       <div className="absolute text-container">
         <div className="transparent-header">
-          <h1 className="about-name">CONTACT US</h1>
+          <h1 className="text-3xl font-bold">CONTACT US</h1>
         </div>
       </div>
     </div>

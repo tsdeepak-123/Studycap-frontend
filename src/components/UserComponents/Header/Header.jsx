@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 function Header() {
+  const location = useLocation();
+  const currentPath = location.pathname;
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -29,28 +31,30 @@ function Header() {
   const handleCollege = () => {
     navigate("/colleges");
   };
+  console.log("path",currentPath);
 
   return (
     <>
-    <div className="header">
-      <div className="logo">
-        <img src="/Images/studycapLogo.png" alt="Logo" className="logo-image" />
-      </div>
-      <nav className="navbar">
-        <ul className={`menu ${isOpen ? "open" : ""}`}>
-          <li onClick={handleHome}>Home</li>
-          <li onClick={handleCollege}>Colleges</li>
-          <li onClick={handleAbout}>About</li>
-          <li onClick={handleService}>Services</li>
-          {/* <li onClick={handleCareer}>Career</li> */}
-          <li onClick={handleContact}>Contact Us</li>
-        </ul>
-        <div className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-          <div className="hamburger"></div>
+      <div className="header">
+        <div className="logo">
+          <img src="/Images/studycapLogo.png" alt="Logo" className="logo-image" />
         </div>
-      </nav>
-    </div>
-    <div className="fixed hidden lg:flex flex-col top-[40%] left-0">
+        <nav className="navbar">
+          <ul className={`menu ${isOpen ? "open" : ""}`}>
+            <li className={currentPath === "/" ? "active" : ""} onClick={handleHome}>Home</li>
+            <li className={currentPath === "/colleges" ? "active" : ""} onClick={handleCollege}>Colleges</li>
+            <li className={currentPath === "/aboutus" ? "active" : ""} onClick={handleAbout}>About</li>
+            <li className={currentPath === "/services" ? "active" : ""} onClick={handleService}>Services</li>
+            {/* Uncomment if you have a "/career" route */}
+            {/* <li className={currentPath === "/career" ? "active" : ""} onClick={handleCareer}>Career</li> */}
+            <li className={currentPath === "/contactus" ? "active" : ""} onClick={handleContact}>Contact Us</li>
+          </ul>
+          <div className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+            <div className="hamburger"></div>
+          </div>
+        </nav>
+      </div>
+      <div className="fixed hidden lg:flex flex-col top-[40%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600">
             <a className="flex justify-between items-center w-full text-gray-300" href="">

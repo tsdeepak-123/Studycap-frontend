@@ -22,7 +22,7 @@ function AboutUs() {
       />
       <div className="absolute text-container">
         <div className="transparent-header">
-          <h1 className="about-name">ABOUT STUDYCAP</h1>
+          <h1 className="text-3xl font-bold">ABOUT<br/>STUDYCAP</h1>
         </div>
       </div>
     </div>

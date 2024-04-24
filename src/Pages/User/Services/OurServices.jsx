@@ -26,7 +26,7 @@ function OurServices() {
       </div>
     </div>
     <div>
-      <p className='about-heading'>WHAT WE DO FOR YOU</p>
+      <p className='flex justify-center sm:text-4xl text-2xl font-bold mt-4'>WHAT WE DO FOR YOU</p>
     </div>
     <Services/>
     <Intrested/>

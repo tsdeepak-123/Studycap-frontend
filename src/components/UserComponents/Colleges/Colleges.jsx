@@ -4,9 +4,11 @@ import "./College.css";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { axiosAdmin } from "../../../Api/axiosInstance";
 import DetailsModal from "../Form/DetailsModal";
+import { useNavigate } from "react-router-dom";
 
 
 function Colleges() {
+  const navigate=useNavigate()
   const [visibleColleges, setVisibleColleges] = useState(6);
   const[collegeData,setCollegeData]=useState([])
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,6 +57,11 @@ function Colleges() {
     fetchColleges();
   }, []);
 
+
+  const handleCollege = () => {
+    navigate("/colleges");
+  };
+
   return (
     <div className="mb-14">
       <p className="flex justify-center text-4xl mt-8 mb-14 font-bold text-blue-600">Top Colleges</p>
@@ -72,7 +79,7 @@ function Colleges() {
       </div>
       <div className="button-div">
       <button
-          className='view-all-button text-blue-600'
+          className='view-all-button text-blue-600' onClick={handleCollege}
         >
           View More <NavigateNextIcon/>
         </button>
