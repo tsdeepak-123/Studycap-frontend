@@ -15,7 +15,7 @@ function Contact() {
             <div className="relative banner-container">
       <Header/>
       <img
-        src="/images/contactus.jpg"
+        src="/Images/contactus.jpg"
         alt="Background"
         className="banner"
       />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Service.css"
 import Header from "../../../components/UserComponents/Header/Header"
 import Services from "../../../components/UserComponents/Services/Services"
@@ -7,12 +7,15 @@ import Footer from "../../../components/UserComponents/Footer/Footer"
 import Intrested from '../../../components/UserComponents/Services/Intrested'
 
 function OurServices() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
                     <div className="relative banner-container">
       <Header/>
       <img
-        src="/images/colleges.jpg"
+        src="/Images/colleges.jpg"
         alt="Background"
         className="banner"
       />

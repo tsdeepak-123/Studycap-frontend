@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from "../../../components/UserComponents/Header/Header"
 import Footer from "../../../components/UserComponents/Footer/Footer"
 import Universities from '../../../components/UserComponents/Universities/Universities'
@@ -8,12 +8,15 @@ import Intrested from '../../../components/UserComponents/Services/Intrested'
 import FormBox from '../../../components/UserComponents/Form/FormBox'
 
 function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
             <div className="relative banner-container">
       <Header/>
       <img
-        src="/images/about.jpg"
+        src="/Images/about.jpg"
         alt="Background"
         className="banner"
       />
