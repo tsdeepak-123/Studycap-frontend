@@ -71,6 +71,7 @@ function Colleges() {
             key={index}
             image={college.image}
             name={college.name}
+            id={college._id}
             description={college.description}
             openModal={openModal} 
           />

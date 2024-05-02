@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import './CollegeCard.css';
+import { useNavigate } from 'react-router-dom';
 
-function CollegeCard({ image, name, description ,openModal}) {
-  console.log(image, name, description);
+function CollegeCard({ image, name, description ,openModal,id}) {
+const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
   };
+
+  const handleSingleView=(id)=>{
+    console.log("button clicked");
+    navigate('/collegeview',{state:{id}})
+  }
 
   return (
     <div className="college-card">
@@ -22,7 +28,7 @@ function CollegeCard({ image, name, description ,openModal}) {
         </div>
         <div className="college-card-buttons">
           <button className="college-card-button apply-now" onClick={openModal}>Apply Now</button>
-          <button className="college-card-button view-details">View Details</button>      
+          <button className="college-card-button view-details" onClick={() => handleSingleView(id)}>View Details</button>      
         </div>
       </div>
     </div>
