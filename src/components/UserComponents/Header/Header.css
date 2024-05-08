@@ -50,13 +50,13 @@
   
   .menu-toggle {
     position: absolute;
-    top: 20px;
+    top: 7px;
     right: 20px;
     cursor: pointer;
   }
   
   .menu-toggle .hamburger {
-    width: 25px;
+    width: 26px;
     height: 3px;
     background-color: white;
     margin: 5px 0;
@@ -134,7 +134,8 @@
     }
   
     .menu.open {
-      margin-top: 50px;
+      margin-top: 70px;
+      margin-right: 18px;
       display: flex;
       flex-direction: column;
       width: 180px;

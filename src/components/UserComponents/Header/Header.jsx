@@ -51,6 +51,8 @@ function Header() {
           </ul>
           <div className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
             <div className="hamburger"></div>
+            <div className="hamburger"></div>
+            <div className="hamburger"></div>
           </div>
         </nav>
       </div>
